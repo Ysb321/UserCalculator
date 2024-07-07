@@ -40,7 +40,6 @@ body {
   border: 2px solid;
   overflow: hidden;
   border-radius: 20px;
-  border: dotted;
 }
 
 .button-box {
@@ -48,7 +47,8 @@ body {
   margin-top: 20px;
   margin-bottom: 10px;
   position: relative;
-  left: 30px;
+  margin-left: 10%;
+  justify-content: center;
   background: transparent;
 }
 
@@ -74,22 +74,12 @@ body {
   border-radius: 20px;
 }
 
-.input-field {
-  background-color: #ffcf96;
-  position: relative;
-  padding: 10px;
-  padding: 10px 40px;
-  margin-bottom: 10px;
-  left: 40px;
-  border-radius: 20px;
-  border: 0;
-  outline: 0;
-}
+
 
 .regBtn {
   background-color: #ff8080;
   position: relative;
-  left: 60px;
+  left: 20%;
   padding: 10px 50px;
   margin-bottom: 10px;
   border-radius: 15px;
@@ -98,24 +88,42 @@ body {
 .logBtn {
   background-color: #ff8080;
   position: relative;
-  left: 60px;
+  left: 20%;
   padding: 10px 60px;
   margin-bottom: 10px;
   border-radius: 15px;
 }
 
 .register-form {
+  width: 100%;
   position: absolute;
   margin-top: 50px;
   margin-bottom: 200px;
-  transition: 1s;
+  transition: .5s;
 }
 
 .login-form {
+  width: 100%;
   position: absolute;
   margin-top: 400px;
   /* margin-left: 300px; */
-  transition: 1s;
+  transition: .5s;
+}
+
+.input-field {
+  /* height: 30px; */
+  width: 45%;
+  font-size: clamp(2vh, 1rem, 2vw);
+  background-color: #ffcf96;
+  position: relative;
+  padding: 10px;
+  padding: 10px 12%;
+  margin-bottom: 10px;
+  /* left: 10%; */
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  left: 15%;
 }
 
 .form,
@@ -193,4 +201,12 @@ body{
 
 .swal-button{
   background-color: #FFCF96;
+  color: #000;
 }
+
+a:focus,
+button:focus {
+    outline: none;
+    background-color: transparent;
+}
+
