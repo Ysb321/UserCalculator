@@ -14,19 +14,6 @@ function reg() {
   z.style.marginTop = "400px";
 }
 
-// function logiin() {
-//   var username = document.querySelector(".inp3").value;
-//   var password = document.querySelector(".inp4").value;
-
-//   username = username.toLowerCase();
-
-//   if (username == "test" && password == "123") {
-//     window.location.assign("calculator/index.html");
-//   } else {
-//     alert("Invalid Login");
-//   }
-// }
-
 // Array to store user credentials
 let users = [];
 
@@ -44,10 +31,12 @@ document
       (u) => u.username === username && u.password === password
     );
     if (user) {
-      alert("Login successful!");
+      // alert("Login successful!");
+      swal("Done", "Login successfull", "success");
+    
       window.location.assign("calculator/index.html");
     } else {
-      alert("Invalid username or password.");
+      swal("Oops", "Invalid username or password.", "error");
     }
   });
 
@@ -63,15 +52,13 @@ document
     // Check if username already exists
     let existingUser = users.find((u) => u.username === username);
     if (existingUser) {
-      alert("Username already exists. Please choose a different one.");
+      // alert("Username already exists. Please choose a different one.");
+      swal("Oops", "Username already exists. Please choose a different one.", "error");
     } else {
       // Add new user to the array
       users.push({ username, password });
-      alert("register successful! You can now login.");
-      // // Clear register form fields
-      // document.querySelector(".registerUsername").value = "";
-      // document.querySelector(".registerPassword").value = "";
-      // Get the button element
+      // alert("register successful! You can now login.");
+      swal("Done", "register successful! You can now login.", "success");
       let button = document.getElementById("log");
 
       // Programmatically trigger the click event

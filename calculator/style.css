@@ -4,14 +4,15 @@ html {
 }
 
 body {
-  max-height: 400px;
+  height: 600px;
   /* overflow-y: hidden; */
 }
 
 #calculator {
   border: 5px solid;
-  border-radius: 10px;
-  width: 180px;
+  border-radius: 20px;
+  width: 280px;
+  height: 400px;
   padding-bottom: 20px;
   /* background-color: rgb(226, 134, 13); */
   background-color: hsla(49, 87%, 33%, 0.226);
@@ -20,23 +21,24 @@ body {
 #input {
   text-align: center;
   border: 10px;
-  box-shadow: 10px;
   border-radius: 20px;
   margin: 10px;
-  width: 85%;
-  height: 50%;
+  margin-top: 30px;
+  width: 90%;
+  height: 50px;
   padding-top: 10px;
-  font-size: 20px;
+  font-size: 3rem;
   font-weight: bolder;
 }
 .btn {
   background-color: rgb(73, 70, 25);
   color: aliceblue;
+  font-size: 20px;
   font-weight: bolder;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 100px;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 50px;
   margin: 3px;
 }
 
@@ -53,13 +55,14 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 /* container used for align calculator at center on webpage also in html used extra div */
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 55vh; /* Adjust as needed */
+  height: 65vh; /* Adjust as needed */
 }
 
 @media (max-width: 1100px) {
@@ -85,4 +88,13 @@ h1 {
   color: rgba(96, 97, 18, 0.932);
   margin: 0 80px;
   margin-top: 50px;
+}
+
+h1 span{
+  font-family: cursive;
+}
+
+.equal{
+  width: 100px;
+  font-size: 30px;
 }
