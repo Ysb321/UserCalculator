@@ -1,0 +1,88 @@
+html {
+  background-image: url("image.webp");
+  background-size: cover;
+}
+
+body {
+  max-height: 400px;
+  /* overflow-y: hidden; */
+}
+
+#calculator {
+  border: 5px solid;
+  border-radius: 10px;
+  width: 180px;
+  padding-bottom: 20px;
+  /* background-color: rgb(226, 134, 13); */
+  background-color: hsla(49, 87%, 33%, 0.226);
+  backdrop-filter: blur(10px);
+}
+#input {
+  text-align: center;
+  border: 10px;
+  box-shadow: 10px;
+  border-radius: 20px;
+  margin: 10px;
+  width: 85%;
+  height: 50%;
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.btn {
+  background-color: rgb(73, 70, 25);
+  color: aliceblue;
+  font-weight: bolder;
+  border-radius: 10px;
+  box-shadow: 100px;
+  width: 40px;
+  height: 40px;
+  margin: 3px;
+}
+
+.btn:hover {
+  background-color: gold;
+  color: black;
+}
+
+.btn:first-child:hover {
+  background-color: red;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* container used for align calculator at center on webpage also in html used extra div */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55vh; /* Adjust as needed */
+}
+
+@media (max-width: 1100px) {
+  html {
+    background-size: fill;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+}
+
+.headline {
+  background-color: rgba(255, 255, 255, 0.274);
+  backdrop-filter: blur(10px);
+  padding-bottom: 30px;
+  max-width: 100%;
+  border-radius: 30px;
+}
+
+h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  /* -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black; */
+  color: rgba(96, 97, 18, 0.932);
+  margin: 0 80px;
+  margin-top: 50px;
+}

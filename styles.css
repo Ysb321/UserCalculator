@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #cdfadb;
+  background-image: url(OR9Z400.webp);
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.hero {
+  /* position: absolute; */
+  /* top: 20%; */
+  /* left: 40%; */
+  margin:20vh auto;
+
+}
+
+.form {
+  background-color: #f6fdc33b;
+  backdrop-filter: blur(5px);
+  position: relative;
+  height: 400px;
+  width: 300px;
+  padding: 0px;
+  /* margin: 10px; */
+  margin: auto;
+  border: 2px solid;
+  overflow: hidden;
+  border-radius: 20px;
+  border: dotted;
+}
+
+.button-box {
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  position: relative;
+  left: 30px;
+  background: transparent;
+}
+
+#slider {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: linear-gradient(to right, #ff8080, #ffcf96, #cdfadb, #cdfadb);
+  border-radius: 30px;
+  transition: 0.1s;
+  border-bottom: 2px solid;
+}
+.btn {
+  position: relative;
+  background: transparent;
+  width: 100px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 0;
+  border: 0;
+  border-radius: 20px;
+}
+
+.input-field {
+  background-color: #ffcf96;
+  position: relative;
+  padding: 10px;
+  padding: 10px 40px;
+  margin-bottom: 10px;
+  left: 20px;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+}
+
+.regBtn {
+  background-color: #ff8080;
+  position: relative;
+  left: 60px;
+  padding: 10px 50px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+.logBtn {
+  background-color: #ff8080;
+  position: relative;
+  left: 60px;
+  padding: 10px 60px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+.register-form {
+  position: absolute;
+  margin-top: 50px;
+  margin-bottom: 200px;
+  transition: 1s;
+}
+
+.login-form {
+  position: absolute;
+  margin-top: 400px;
+  /* margin-left: 300px; */
+  transition: 1s;
+}
+
+.form,
+.btn,
+.regBtn,
+.logBtn {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+}
+
+.input-field {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+}
+
+.btn:focus {
+  color: #ff0000;
+}
+
+.regBtn:focus,
+.logBtn:focus {
+  color: #ffffff;
+  box-shadow: 2px 2px 2px 2px #ff8080;
+  border: 2px solid;
+}
+
+.input-field:focus {
+  outline: 1px;
+  outline: 2px solid #5bc57d;
+}
+
+/* @media (max-width: 768px) {
+  .hero {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+  }
+
+  .form {
+    background-color: #f6fdc33b;
+    backdrop-filter: blur(5px);
+    position: relative;
+    height: 400px;
+    width: 270px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid;
+    overflow: hidden;
+    border-radius: 20px;
+    border: dotted;
+  }
+} */
+
+body{
+  margin: auto;
+}
